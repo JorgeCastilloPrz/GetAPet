@@ -9,4 +9,5 @@
     <dimen name="spacing_extra_large">64dp</dimen>
 
     <dimen name="toolbar_elevation">6dp</dimen>
+    <dimen name="shr_product_grid_reveal_height">200dp</dimen>
 </resources>

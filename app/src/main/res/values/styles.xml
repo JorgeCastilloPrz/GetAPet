@@ -18,6 +18,7 @@
     <style name="Theme.Shrine" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:textColorPrimary">@color/textColor</item>
         <item name="toolbarStyle">@style/Widget.Shrine.Toolbar</item>
     </style>
@@ -25,7 +26,6 @@
     <style name="Widget.Shrine.Toolbar" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:background">@color/colorPrimary</item>
         <item name="titleTextAppearance">@style/TextAppearance.Shrine.Logo</item>
-        <item name="android:elevation">@dimen/toolbar_elevation</item>
     </style>
 
     <style name="TextAppearance.Shrine.Logo" parent="TextAppearance.MaterialComponents.Headline3">
@@ -35,5 +35,13 @@
         <item name="android:textColor">@color/textColor</item>
         <item name="android:letterSpacing">0.10</item>
         <item name="android:fontFamily">@font/rubik_regular_family</item>
+    </style>
+
+    <style name="Widget.Shrine.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.Shrine.Backdrop" parent="">
+        <item name="android:background">?attr/colorPrimary</item>
     </style>
 </resources>
