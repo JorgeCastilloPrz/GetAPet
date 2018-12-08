@@ -25,14 +25,15 @@
     <style name="Widget.Shrine.Toolbar" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:background">@color/colorPrimary</item>
         <item name="titleTextAppearance">@style/TextAppearance.Shrine.Logo</item>
+        <item name="android:elevation">@dimen/toolbar_elevation</item>
     </style>
 
-    <style name="TextAppearance.Shrine.Logo" parent="TextAppearance.AppCompat.Display3">
+    <style name="TextAppearance.Shrine.Logo" parent="TextAppearance.MaterialComponents.Headline3">
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColor</item>
         <item name="android:letterSpacing">0.10</item>
-        <item name="android:elevation">@dimen/toolbar_elevation</item>
         <item name="android:fontFamily">@font/rubik_regular_family</item>
     </style>
 </resources>
