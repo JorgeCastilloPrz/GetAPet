@@ -29,9 +29,10 @@
 
     <style name="TextAppearance.Shrine.Logo" parent="TextAppearance.AppCompat.Display3">
         <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:letterSpacing">0.20</item>
+        <item name="android:letterSpacing">0.10</item>
         <item name="android:elevation">@dimen/toolbar_elevation</item>
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
     </style>
 </resources>
