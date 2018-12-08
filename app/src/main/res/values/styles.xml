@@ -22,7 +22,8 @@
         <item name="toolbarStyle">@style/Widget.Shrine.Toolbar</item>
     </style>
 
-    <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
+    <style name="Widget.Shrine.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
         <item name="titleTextAppearance">@style/TextAppearance.Shrine.Logo</item>
     </style>
 
