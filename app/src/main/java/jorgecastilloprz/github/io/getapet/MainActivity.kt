@@ -1,6 +1,5 @@
 package jorgecastilloprz.github.io.getapet
 
-import android.os.Build
 import android.os.Bundle
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.appcompat.app.AppCompatActivity
@@ -28,9 +27,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupContentBackground() {
-        // Set cut corner background for API 23+
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            content.background = getDrawable(R.drawable.shr_product_grid_background_shape)
-        }
+        content.background = getDrawable(R.drawable.shr_product_grid_background_shape)
     }
 }
