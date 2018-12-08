@@ -21,7 +21,9 @@ class MainActivity : AppCompatActivity() {
             NavigationIconClickListener(
                 this,
                 content,
-                AccelerateDecelerateInterpolator()
+                AccelerateDecelerateInterpolator(),
+                getDrawable(R.drawable.ic_dehaze_black_24dp),
+                getDrawable(R.drawable.shr_close_menu)
             )
         )
     }
