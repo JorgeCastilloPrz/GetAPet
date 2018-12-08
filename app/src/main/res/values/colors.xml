@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#FEDBD0</color> <!-- Shrine Pink 100 -->
+    <color name="colorSecondary">#FEEAE6</color> <!-- Shrine Pink 50 -->
+    <color name="textColor">#442C2E</color> <!-- Shrine Pink 900 -->
+    <color name="iconColor">@color/textColor</color>
 </resources>
