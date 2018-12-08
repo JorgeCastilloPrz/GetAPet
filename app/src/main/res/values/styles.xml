@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!--
+<?xml version="1.0" encoding="utf-8" ?><!--
      Copyright (C) 2017 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,8 +23,6 @@
     </style>
 
     <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="titleTextAppearance">@style/TextAppearance.Shrine.Logo</item>
     </style>
 
