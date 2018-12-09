@@ -27,6 +27,13 @@
         <item name="rippleColor">@color/text_button_ripple</item>
     </style>
 
+    <style name="Widget.Shrine.Button.MenuButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="rippleColor">@color/text_button_ripple</item>
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+    </style>
+
     <style name="Widget.Shrine.Backdrop" parent="">
         <item name="android:background">?attr/colorPrimary</item>
     </style>
