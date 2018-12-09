@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupActionBar() {
         setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
         toolbar.setNavigationOnClickListener(
             NavigationIconClickListener(
                 this,
