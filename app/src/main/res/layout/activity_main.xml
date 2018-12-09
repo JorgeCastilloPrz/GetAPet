@@ -15,7 +15,7 @@
             android:orientation="vertical"
             android:paddingTop="88dp">
 
-        <include layout="@layout/shr_backdrop"/>
+        <include layout="@layout/backdrop_menu"/>
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

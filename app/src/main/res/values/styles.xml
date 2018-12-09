@@ -38,7 +38,8 @@
     </style>
 
     <style name="Widget.Shrine.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="rippleColor">@color/text_button_ripple</item>
     </style>
 
     <style name="Widget.Shrine.Backdrop" parent="">
