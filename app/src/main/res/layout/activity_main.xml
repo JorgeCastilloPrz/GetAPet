@@ -7,16 +7,7 @@
         android:layout_height="match_parent"
 >
 
-    <LinearLayout
-            style="@style/Widget.Shrine.Backdrop"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:paddingTop="88dp">
-
-        <include layout="@layout/backdrop_menu"/>
-    </LinearLayout>
+    <include layout="@layout/backdrop_menu"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

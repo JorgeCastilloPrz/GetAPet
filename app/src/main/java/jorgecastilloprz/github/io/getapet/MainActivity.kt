@@ -5,6 +5,7 @@ import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import jorgecastilloprz.github.io.getapet.listener.NavigationIconClickListener
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.backdrop_menu.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             NavigationIconClickListener(
                 this,
                 content,
+                backdropMenu,
                 AccelerateDecelerateInterpolator(),
                 getDrawable(R.drawable.ic_dehaze_black_24dp),
                 getDrawable(R.drawable.shr_close_menu)

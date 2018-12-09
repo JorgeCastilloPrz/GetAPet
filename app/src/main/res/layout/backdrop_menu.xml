@@ -1,48 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-       tools:showIn="@layout/activity_main">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/backdropMenu"
+        tools:showIn="@layout/activity_main"
+        style="@style/Widget.Shrine.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="88dp">
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_featured_label"/>
+            android:text="@string/shr_featured_label"
+            android:alpha="0"/>
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_apartment_label"/>
+            android:text="@string/shr_apartment_label"
+            android:alpha="0"/>
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_accessories_label"/>
+            android:text="@string/shr_accessories_label"
+            android:alpha="0"/>
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_shoes_label"/>
+            android:text="@string/shr_shoes_label"
+            android:alpha="0"/>
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_tops_label"/>
+            android:text="@string/shr_tops_label"
+            android:alpha="0"/>
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_bottoms_label"/>
+            android:text="@string/shr_bottoms_label"
+            android:alpha="0"/>
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_dresses_label"/>
+            android:text="@string/shr_dresses_label"
+            android:alpha="0"/>
 
     <View
             android:layout_width="56dp"
@@ -54,6 +70,6 @@
             style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/shr_account_label"/>
-
-</merge>
+            android:text="@string/shr_account_label"
+            android:alpha="0"/>
+</LinearLayout>
