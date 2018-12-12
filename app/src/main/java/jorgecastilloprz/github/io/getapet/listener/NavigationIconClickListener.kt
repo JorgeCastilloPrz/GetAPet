@@ -51,7 +51,7 @@ class NavigationIconClickListener @JvmOverloads internal constructor(
         }
         animators.add(translationAnim)
 
-        val sheetOverlayFadeAnim = ObjectAnimator.ofFloat(sheetOverlay, "alpha", if (backdropShown) 0.7f else 0f)
+        val sheetOverlayFadeAnim = ObjectAnimator.ofFloat(sheetOverlay, "alpha", if (backdropShown) 0.8f else 0f)
         animators.add(sheetOverlayFadeAnim)
 
         backdropMenu.forEachIndexed { index, currentView ->
