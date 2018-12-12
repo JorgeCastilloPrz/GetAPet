@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="backdrop_top_padding">88dp</dimen>
+    <dimen name="backdrop_menu_button">20sp</dimen>
+
+    <dimen name="shr_staggered_product_grid_margin_top_first">72dp</dimen>
+    <dimen name="shr_staggered_product_grid_margin_top_second">56dp</dimen>
+    <dimen name="shr_staggered_product_grid_margin_top_third">152dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_width_portrait">205dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_height_portrait">287dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_width_landscape">228dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_height_landscape">180dp</dimen>
+</resources>

@@ -2,15 +2,11 @@ package jorgecastilloprz.github.io.getapet.listener
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.app.Activity
-import android.content.Context
 import android.graphics.drawable.Drawable
-import android.util.DisplayMetrics
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.Interpolator
 import android.widget.ImageView
-import androidx.core.view.forEach
 import androidx.core.view.forEachIndexed
 import jorgecastilloprz.github.io.getapet.R
 
@@ -19,7 +15,7 @@ import jorgecastilloprz.github.io.getapet.R
  * the Y-axis when the navigation icon in the toolbar is pressed.
  */
 class NavigationIconClickListener @JvmOverloads internal constructor(
-    private val context: Context,
+    private val toolbar: View,
     private val sheet: View,
     private val backdropMenu: ViewGroup,
     private val interpolator: Interpolator? = null,
@@ -28,14 +24,7 @@ class NavigationIconClickListener @JvmOverloads internal constructor(
 ) : View.OnClickListener {
 
     private val animatorSet = AnimatorSet()
-    private val height: Int
     private var backdropShown = false
-
-    init {
-        val displayMetrics = DisplayMetrics()
-        (context as Activity).windowManager.defaultDisplay.getMetrics(displayMetrics)
-        height = displayMetrics.heightPixels
-    }
 
     override fun onClick(view: View) {
         backdropShown = !backdropShown
@@ -47,7 +36,7 @@ class NavigationIconClickListener @JvmOverloads internal constructor(
 
         updateIcon(view)
 
-        val translateY = height - context.resources.getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height)
+        val translateY = backdropMenu.height - toolbar.height - toolbar.context.resources.getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height)
 
         val animator = ObjectAnimator.ofFloat(sheet, "translationY", (if (backdropShown) translateY else 0).toFloat())
         animator.duration = if (backdropShown) 300 else 200

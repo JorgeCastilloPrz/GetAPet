@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupBackdrop() {
         toolbar.setNavigationOnClickListener(
             NavigationIconClickListener(
-                this,
+                toolbar,
                 content,
                 backdropMenu,
                 AccelerateDecelerateInterpolator(),
