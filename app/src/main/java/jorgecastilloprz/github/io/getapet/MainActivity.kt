@@ -30,12 +30,13 @@ class MainActivity : AppCompatActivity() {
     private fun setupBackdrop() {
         toolbar.setNavigationOnClickListener(
             NavigationIconClickListener(
-                toolbar,
-                content,
-                backdropMenu,
-                AccelerateDecelerateInterpolator(),
-                getDrawable(R.drawable.ic_dehaze_black_24dp),
-                getDrawable(R.drawable.shr_close_menu)
+                toolbar = toolbar,
+                sheet = content,
+                sheetOverlay = contentSheetOverlay,
+                backdropMenu = backdropMenu,
+                interpolator = AccelerateDecelerateInterpolator(),
+                openIcon = getDrawable(R.drawable.ic_dehaze_black_24dp),
+                closeIcon = getDrawable(R.drawable.shr_close_menu)
             )
         )
     }

@@ -18,6 +18,7 @@ import jorgecastilloprz.github.io.getapet.R
 class NavigationIconClickListener @JvmOverloads internal constructor(
     private val toolbar: View,
     private val sheet: View,
+    private val sheetOverlay: View,
     private val backdropMenu: ViewGroup,
     private val interpolator: Interpolator? = null,
     private val openIcon: Drawable? = null,
@@ -42,12 +43,16 @@ class NavigationIconClickListener @JvmOverloads internal constructor(
             backdropMenu.height - toolbar.height - toolbar.context.resources.getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height)
 
         val animators = mutableListOf<Animator>()
-        val animator = ObjectAnimator.ofFloat(sheet, "translationY", (if (backdropShown) translateY else 0).toFloat())
-        animator.duration = if (backdropShown) 300 else 200
+        val translationAnim =
+            ObjectAnimator.ofFloat(sheet, "translationY", (if (backdropShown) translateY else 0).toFloat())
+        translationAnim.duration = if (backdropShown) 300 else 200
         if (interpolator != null) {
-            animator.interpolator = interpolator
+            translationAnim.interpolator = interpolator
         }
-        animators.add(animator)
+        animators.add(translationAnim)
+
+        val sheetOverlayFadeAnim = ObjectAnimator.ofFloat(sheetOverlay, "alpha", if (backdropShown) 0.7f else 0f)
+        animators.add(sheetOverlayFadeAnim)
 
         backdropMenu.forEachIndexed { index, currentView ->
             val fadeAnim = ObjectAnimator.ofFloat(currentView, "alpha", if (backdropShown) 1f else 0f)

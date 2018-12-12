@@ -57,6 +57,14 @@
                 android:id="@+id/petGrid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
+
+            <View
+                android:id="@+id/contentSheetOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/shr_product_grid_reveal_height"
+                android:background="@color/productGridBackgroundColor"
+                android:alpha="0"/>
         </FrameLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
