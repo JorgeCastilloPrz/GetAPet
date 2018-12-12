@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:text="Another title"
                 android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceSubtitle2"/>
+                android:textAppearance="?attr/textAppearanceBody2"/>
 
             <TextView
                 android:id="@+id/product_price"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:text="$99"
                 android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceBody2"/>
+                android:textAppearance="?attr/textAppearanceSubtitle2"/>
         </LinearLayout>
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

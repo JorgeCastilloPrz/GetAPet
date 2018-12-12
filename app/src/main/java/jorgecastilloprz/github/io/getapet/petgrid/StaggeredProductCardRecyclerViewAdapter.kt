@@ -35,10 +35,10 @@ class StaggeredProductCardRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: StaggeredProductCardViewHolder, position: Int) {
         if (productList != null && position < productList.size) {
-            val product = productList[position]
-            holder.productTitle.text = product.title
-            holder.productPrice.text = "$${product.price}"
-            Picasso.get().load(product.url).into(holder.productImage)
+            val pet = productList[position]
+            holder.productTitle.text = "${pet.species} · ${pet.breed}"
+            holder.productPrice.text = pet.name
+            Picasso.get().load(pet.url).into(holder.productImage)
         }
     }
 
