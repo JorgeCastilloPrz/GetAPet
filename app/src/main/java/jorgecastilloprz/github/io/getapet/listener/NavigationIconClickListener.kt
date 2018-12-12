@@ -1,5 +1,6 @@
 package jorgecastilloprz.github.io.getapet.listener
 
+import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.graphics.drawable.Drawable
@@ -23,35 +24,39 @@ class NavigationIconClickListener @JvmOverloads internal constructor(
     private val closeIcon: Drawable? = null
 ) : View.OnClickListener {
 
-    private val animatorSet = AnimatorSet()
+    private var lastAnimation: AnimatorSet? = null
     private var backdropShown = false
 
     override fun onClick(view: View) {
         backdropShown = !backdropShown
 
         // Cancel the existing animations
-        animatorSet.removeAllListeners()
-        animatorSet.end()
-        animatorSet.cancel()
+        lastAnimation?.removeAllListeners()
+        lastAnimation?.end()
+        lastAnimation?.cancel()
 
         updateIcon(view)
 
-        val translateY = backdropMenu.height - toolbar.height - toolbar.context.resources.getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height)
+        lastAnimation = AnimatorSet()
+        val translateY =
+            backdropMenu.height - toolbar.height - toolbar.context.resources.getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height)
 
+        val animators = mutableListOf<Animator>()
         val animator = ObjectAnimator.ofFloat(sheet, "translationY", (if (backdropShown) translateY else 0).toFloat())
         animator.duration = if (backdropShown) 300 else 200
         if (interpolator != null) {
             animator.interpolator = interpolator
         }
-        animatorSet.play(animator)
-        animator.start()
+        animators.add(animator)
 
-        val buttonFadeAnimDelay = 30L
         backdropMenu.forEachIndexed { index, currentView ->
-            currentView.animate()
-                .alpha(if (backdropShown) 1f else 0f)
-                .setStartDelay(index * buttonFadeAnimDelay).start()
+            val fadeAnim = ObjectAnimator.ofFloat(currentView, "alpha", if (backdropShown) 1f else 0f)
+            fadeAnim.startDelay = index * 30L
+            animators.add(fadeAnim)
         }
+
+        lastAnimation?.playTogether(animators)
+        lastAnimation?.start()
     }
 
     private fun updateIcon(view: View) {
