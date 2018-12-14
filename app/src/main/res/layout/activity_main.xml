@@ -75,6 +75,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:backgroundTint="@color/colorSecondary"
+            app:rippleColor="@color/colorPrimary"
             app:fabSize="normal"
             app:srcCompat="@drawable/ic_filter_list_black_24dp"/>
 

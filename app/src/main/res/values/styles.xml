@@ -4,6 +4,7 @@
     <style name="Theme.Shrine" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:textColorPrimary">@color/textColor</item>
         <item name="toolbarStyle">@style/Widget.Shrine.Toolbar</item>
