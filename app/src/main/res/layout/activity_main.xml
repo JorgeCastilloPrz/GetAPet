@@ -65,7 +65,8 @@
                 android:layout_gravity="end"
                 android:layout_width="@dimen/button_size"
                 android:layout_height="@dimen/button_size"
-                android:src="@drawable/ic_tune_black_24dp"/>
+                android:src="@drawable/ic_tune_black_24dp"
+                android:contentDescription="@string/filter_button_description"/>
 
             <View
                 android:id="@+id/contentSheetOverlay"
@@ -77,7 +78,7 @@
         </FrameLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/FloatingActionButton"
+            android:id="@+id/addPetButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_medium"
@@ -86,7 +87,7 @@
             app:backgroundTint="@color/colorSecondary"
             app:rippleColor="@color/colorPrimary"
             app:fabSize="normal"
-            app:srcCompat="@drawable/ic_filter_list_black_24dp"/>
+            app:srcCompat="@drawable/ic_add_pet"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
