@@ -35,6 +35,10 @@
         <item name="android:fontFamily">@font/rubik_medium_family</item>
     </style>
 
+    <style name="IconButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@color/icon_button_selector</item>
+    </style>
+
     <style name="Widget.Shrine.Backdrop" parent="">
         <item name="android:background">?attr/colorPrimary</item>
     </style>
