@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import jorgecastilloprz.github.io.getapet.R
+import jorgecastilloprz.github.io.getapet.petgrid.picasso.Desaturated
 
 /**
  * Adapter used to show an asymmetric grid of products, with 2 items in the first column, and 1
@@ -38,7 +39,12 @@ class StaggeredProductCardRecyclerViewAdapter(
             val pet = productList[position]
             holder.productTitle.text = "${pet.species} · ${pet.breed}"
             holder.productPrice.text = pet.name
-            Picasso.get().load(pet.url).into(holder.productImage)
+            Picasso.get()
+                .load(pet.url)
+                .fit()
+                .centerCrop()
+                .transform(Desaturated())
+                .into(holder.productImage)
         }
     }
 
