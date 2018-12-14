@@ -5,10 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import jorgecastilloprz.github.io.getapet.R
-import jorgecastilloprz.github.io.getapet.petgrid.picasso.Desaturated
+import jorgecastilloprz.github.io.getapet.petgrid.picasso.Tint
 
 /**
  * Adapter used to show an asymmetric grid of products, with 2 items in the first column, and 1
@@ -43,7 +44,7 @@ class StaggeredProductCardRecyclerViewAdapter(
                 .load(pet.url)
                 .fit()
                 .centerCrop()
-                .transform(Desaturated())
+                .transform(Tint(1f, ContextCompat.getColor(holder.itemView.context, R.color.colorPrimary)))
                 .into(holder.productImage)
         }
     }
