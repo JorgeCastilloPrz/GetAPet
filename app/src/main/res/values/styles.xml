@@ -8,6 +8,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:textColorPrimary">@color/textColor</item>
         <item name="toolbarStyle">@style/Widget.Shrine.Toolbar</item>
+        <item name="colorControlHighlight">@color/colorSecondary</item>
     </style>
 
     <style name="Widget.Shrine.Toolbar" parent="Widget.MaterialComponents.Toolbar">
