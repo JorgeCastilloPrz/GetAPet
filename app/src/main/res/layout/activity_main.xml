@@ -21,27 +21,13 @@
             android:layout_height="?attr/actionBarSize"
             app:contentInsetStart="0dp"
             app:contentInsetLeft="0dp"
+            android:paddingStart="@dimen/spacing_small"
+            app:title="@string/app_name"
             app:contentInsetStartWithNavigation="0dp"
-            app:navigationIcon="@drawable/ic_dehaze_black_24dp"
+            app:navigationIcon="@drawable/ic_drawer"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <TextView
-                android:id="@+id/toolbarTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:textAppearance="@style/TextAppearance.ToolbarTitle"/>
-
-            <ImageView
-                android:id="@+id/dogToolbarIcon"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                app:srcCompat="@drawable/ic_dog"
-                android:layout_marginStart="@dimen/spacing_small"
-                android:contentDescription="@string/app_icon_description"/>
-
-        </androidx.appcompat.widget.Toolbar>
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlSymmetry"/>
 
         <FrameLayout
             android:elevation="6dp"

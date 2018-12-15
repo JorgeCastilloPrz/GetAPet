@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupActionBar() {
         setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
         setupBackdrop()
     }
 
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 sheetOverlay = contentSheetOverlay,
                 backdropMenu = backdropMenu,
                 interpolator = AccelerateDecelerateInterpolator(),
-                openIcon = getDrawable(R.drawable.ic_dehaze_black_24dp),
+                openIcon = getDrawable(R.drawable.ic_drawer),
                 closeIcon = getDrawable(R.drawable.shr_close_menu)
             )
         )

@@ -12,6 +12,7 @@
 
     <style name="Widget.Shrine.Toolbar" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.ToolbarTitle</item>
     </style>
 
     <style name="TextAppearance.ToolbarTitle" parent="TextAppearance.MaterialComponents.Headline3">
