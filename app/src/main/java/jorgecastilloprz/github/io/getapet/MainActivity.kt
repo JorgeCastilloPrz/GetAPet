@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupContentBackground() {
-        content.background = getDrawable(R.drawable.shr_product_grid_background_shape)
+        content.background = getDrawable(R.drawable.bg_backdrop)
     }
 
     private fun setupPetGrid() {

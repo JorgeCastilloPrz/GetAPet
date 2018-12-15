@@ -44,11 +44,12 @@
         </androidx.appcompat.widget.Toolbar>
 
         <FrameLayout
+            android:elevation="6dp"
             android:id="@+id/content"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="center"
-            android:background="@color/productGridBackgroundColor"
+            android:background="@drawable/bg_backdrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
