@@ -15,7 +15,7 @@
         style="@style/Widget.Shrine.Button.MenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shr_featured_label"
+        android:text="@string/category_cats"
         tools:alpha="1"
         android:alpha="0"/>
 
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:alpha="1"
-        android:text="@string/shr_apartment_label"
+        android:text="@string/category_dogs"
         android:alpha="0"/>
 
     <Button
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:alpha="1"
-        android:text="@string/shr_accessories_label"
+        android:text="@string/category_birds"
         android:alpha="0"/>
 
     <Button
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:alpha="1"
-        android:text="@string/shr_shoes_label"
+        android:text="@string/category_reptiles"
         android:alpha="0"/>
 
     <Button
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:alpha="1"
-        android:text="@string/shr_tops_label"
+        android:text="@string/category_insects"
         android:alpha="0"/>
 
     <Button
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:alpha="1"
-        android:text="@string/shr_bottoms_label"
+        android:text="@string/category_fishes"
         android:alpha="0"/>
 
     <Button
@@ -64,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:alpha="1"
-        android:text="@string/shr_dresses_label"
+        android:text="@string/category_others"
         android:alpha="0"/>
 
     <View
@@ -78,6 +78,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:alpha="1"
-        android:text="@string/shr_account_label"
+        android:text="@string/account"
         android:alpha="0"/>
 </LinearLayout>

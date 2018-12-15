@@ -74,7 +74,7 @@
             app:backgroundTint="@color/colorSecondary"
             app:rippleColor="@color/colorPrimary"
             app:fabSize="normal"
-            app:srcCompat="@drawable/ic_add_pet"/>
+            app:srcCompat="@drawable/ic_dog"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
