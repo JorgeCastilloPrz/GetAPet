@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="@dimen/shr_staggered_product_grid_card_width_portrait"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="@dimen/shr_staggered_product_grid_card_width_portrait"
     android:layout_height="match_parent"
     app:cardBackgroundColor="@android:color/transparent"
     app:cardElevation="0dp"
@@ -23,7 +23,8 @@
             android:clickable="true"
             android:focusable="true"
             android:background="?attr/colorSecondary"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"/>
 
         <LinearLayout
             android:layout_width="match_parent"
