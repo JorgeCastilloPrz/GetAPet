@@ -22,6 +22,9 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
             android:background="?attr/colorSecondary"
+            android:foreground="@drawable/grid_item_selector"
+            android:clickable="true"
+            android:focusable="true"
             android:scaleType="centerCrop"/>
 
         <LinearLayout

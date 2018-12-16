@@ -21,6 +21,9 @@
             android:id="@+id/product_image"
             android:layout_width="match_parent"
             android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
+            android:foreground="@drawable/grid_item_selector"
+            android:clickable="true"
+            android:focusable="true"
             android:background="?attr/colorSecondary"
             android:scaleType="centerCrop"/>
 
