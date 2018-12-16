@@ -1,11 +1,15 @@
 package jorgecastilloprz.github.io.getapet
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import jorgecastilloprz.github.io.getapet.listener.NavigationIconClickListener
+import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity
+import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity.Companion.EXTRA_PET_ID
 import jorgecastilloprz.github.io.getapet.petgrid.PetGridItemDecoration
+import jorgecastilloprz.github.io.getapet.petgrid.PetViewState
 import jorgecastilloprz.github.io.getapet.petgrid.StaggeredProductCardRecyclerViewAdapter
 import jorgecastilloprz.github.io.getapet.petgrid.generateMockPets
 import kotlinx.android.synthetic.main.activity_main.*
@@ -53,10 +57,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
         petGrid.layoutManager = gridLayoutManager
-        val adapter = StaggeredProductCardRecyclerViewAdapter(generateMockPets())
+        val adapter = StaggeredProductCardRecyclerViewAdapter(generateMockPets(), onGridItemSelected())
         petGrid.adapter = adapter
         val largePadding = resources.getDimensionPixelSize(R.dimen.shr_staggered_product_grid_spacing_large)
         val smallPadding = resources.getDimensionPixelSize(R.dimen.shr_staggered_product_grid_spacing_small)
         petGrid.addItemDecoration(PetGridItemDecoration(largePadding, smallPadding))
+    }
+
+    private fun onGridItemSelected(): ((PetViewState) -> Unit) = { petState ->
+        val intent = Intent(this, PetDetailActivity::class.java)
+        intent.putExtra(EXTRA_PET_ID, petState.petId)
+        startActivity(intent)
     }
 }

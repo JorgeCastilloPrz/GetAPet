@@ -16,7 +16,8 @@ import jorgecastilloprz.github.io.getapet.petgrid.picasso.Tint
  * item in the second column, and so on.
  */
 class StaggeredProductCardRecyclerViewAdapter(
-    private val productList: List<PetViewState>?
+    private val pets: List<PetViewState>?,
+    private val onItemSelected: ((PetViewState) -> Unit)? = null
 ) : RecyclerView.Adapter<StaggeredProductCardRecyclerViewAdapter.StaggeredProductCardViewHolder>() {
 
     override fun getItemViewType(position: Int): Int {
@@ -36,8 +37,8 @@ class StaggeredProductCardRecyclerViewAdapter(
     }
 
     override fun onBindViewHolder(holder: StaggeredProductCardViewHolder, position: Int) {
-        if (productList != null && position < productList.size) {
-            val pet = productList[position]
+        if (pets != null && position < pets.size) {
+            val pet = pets[position]
             holder.productTitle.text = "${pet.species} · ${pet.breed}"
             holder.productPrice.text = pet.name
             Picasso.get()
@@ -46,14 +47,20 @@ class StaggeredProductCardRecyclerViewAdapter(
                 .centerCrop()
                 .transform(Tint(1f, ContextCompat.getColor(holder.itemView.context, R.color.colorPrimary)))
                 .into(holder.productImage)
+            
+            holder.card.setOnClickListener { onItemSelected?.invoke(pet) }
+            holder.productImage.setOnClickListener { onItemSelected?.invoke(pet) }
         }
     }
 
     override fun getItemCount(): Int {
-        return productList?.size ?: 0
+        return pets?.size ?: 0
     }
 
-    class StaggeredProductCardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class StaggeredProductCardViewHolder(
+        itemView: View
+    ) : RecyclerView.ViewHolder(itemView) {
+        var card: View = itemView.findViewById(R.id.card)
         var productImage: ImageView = itemView.findViewById(R.id.product_image)
         var productTitle: TextView = itemView.findViewById(R.id.product_title)
         var productPrice: TextView = itemView.findViewById(R.id.product_price)
