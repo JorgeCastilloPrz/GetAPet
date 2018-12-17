@@ -10,7 +10,7 @@ import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity
 import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity.Companion.EXTRA_PET_ID
 import jorgecastilloprz.github.io.getapet.petgrid.PetGridItemDecoration
 import jorgecastilloprz.github.io.getapet.petgrid.PetViewState
-import jorgecastilloprz.github.io.getapet.petgrid.StaggeredProductCardRecyclerViewAdapter
+import jorgecastilloprz.github.io.getapet.petgrid.StaggeredProductAdapter
 import jorgecastilloprz.github.io.getapet.petgrid.generateMockPets
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.backdrop_menu.*
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         petGrid.layoutManager = gridLayoutManager
-        val adapter = StaggeredProductCardRecyclerViewAdapter(generateMockPets(), onGridItemSelected())
+        val adapter = StaggeredProductAdapter(generateMockPets(), onGridItemSelected(), onFavItemClick())
         petGrid.adapter = adapter
         val largePadding = resources.getDimensionPixelSize(R.dimen.shr_staggered_product_grid_spacing_large)
         val smallPadding = resources.getDimensionPixelSize(R.dimen.shr_staggered_product_grid_spacing_small)
@@ -68,5 +68,8 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, PetDetailActivity::class.java)
         intent.putExtra(EXTRA_PET_ID, petState.petId)
         startActivity(intent)
+    }
+
+    private fun onFavItemClick(): ((PetViewState) -> Unit) = { petState ->
     }
 }

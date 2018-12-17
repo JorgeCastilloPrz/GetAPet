@@ -38,7 +38,11 @@
     </style>
 
     <style name="IconButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
-        <item name="backgroundTint">@color/icon_button_selector</item>
+        <item name="android:background">@drawable/icon_button_selector</item>
+    </style>
+
+    <style name="IconButton.Grid" parent="IconButton">
+        <item name="android:background">@drawable/icon_button_selector_grid</item>
     </style>
 
     <style name="Widget.Shrine.Backdrop" parent="">

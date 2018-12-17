@@ -9,7 +9,7 @@
     <dimen name="spacing_extra_large">64dp</dimen>
 
     <dimen name="toolbar_elevation">6dp</dimen>
-    <dimen name="button_size">56dp</dimen>
+    <dimen name="icon_button_size">56dp</dimen>
     <dimen name="backdrop_corner_radius">36dp</dimen>
 
     <dimen name="shr_product_grid_reveal_height">42dp</dimen>

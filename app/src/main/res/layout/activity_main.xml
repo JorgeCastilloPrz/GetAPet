@@ -50,8 +50,8 @@
                 android:id="@+id/filterButton"
                 style="@style/IconButton"
                 android:layout_gravity="end"
-                android:layout_width="@dimen/button_size"
-                android:layout_height="@dimen/button_size"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:src="@drawable/ic_tune_black_24dp"
                 android:contentDescription="@string/filter_button_description"/>
 
