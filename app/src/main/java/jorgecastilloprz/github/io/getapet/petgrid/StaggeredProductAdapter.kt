@@ -117,10 +117,10 @@ class StaggeredProductAdapter(
                 .clearFilters()
                 .setRegion(0, 0, bitmap.width - 1, iconSize) /* - 1 to work around
                         https://code.google.com/p/android/issues/detail?id=191013 */
-                .generate { palette -> applyTopPalette(bitmap, palette) }
+                .generate { palette -> applyTopPalette(pet, bitmap, palette) }
         }
 
-        private fun applyTopPalette(bitmap: Bitmap, palette: Palette?) {
+        private fun applyTopPalette(pet: PetViewState, bitmap: Bitmap, palette: Palette?) {
             val lightness = ColorUtils.isDark(palette)
             val isDark = if (lightness == ColorUtils.LIGHTNESS_UNKNOWN) {
                 ColorUtils.isDark(bitmap, bitmap.width / 2, 0)
@@ -133,6 +133,8 @@ class StaggeredProductAdapter(
             } else {
                 favButton.setImageResource(R.drawable.ic_fav_dark)
             }
+
+            pet.darkImage = isDark
         }
     }
 }

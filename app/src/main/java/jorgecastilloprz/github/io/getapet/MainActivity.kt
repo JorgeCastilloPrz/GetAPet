@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import jorgecastilloprz.github.io.getapet.listener.NavigationIconClickListener
 import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity
 import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity.Companion.EXTRA_PET_ID
+import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity.Companion.EXTRA_PET_IS_DARK
+import jorgecastilloprz.github.io.getapet.petdetail.PetDetailActivity.Companion.EXTRA_PET_PICTURE_URL
 import jorgecastilloprz.github.io.getapet.petgrid.PetGridItemDecoration
 import jorgecastilloprz.github.io.getapet.petgrid.PetViewState
 import jorgecastilloprz.github.io.getapet.petgrid.StaggeredProductAdapter
@@ -67,6 +69,8 @@ class MainActivity : AppCompatActivity() {
     private fun onGridItemSelected(): ((PetViewState) -> Unit) = { petState ->
         val intent = Intent(this, PetDetailActivity::class.java)
         intent.putExtra(EXTRA_PET_ID, petState.petId)
+        intent.putExtra(EXTRA_PET_PICTURE_URL, petState.url)
+        intent.putExtra(EXTRA_PET_IS_DARK, petState.darkImage)
         startActivity(intent)
     }
 
