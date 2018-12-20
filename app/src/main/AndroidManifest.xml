@@ -10,7 +10,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Shrine"
+        android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         android:fullBackupContent="@xml/backup_descriptor">
 
@@ -21,6 +21,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".petdetail.PetDetailActivity"/>
+        <activity android:name=".petdetail.PetDetailActivity" android:theme="@style/AppTheme.Immerse"/>
     </application>
 </manifest>

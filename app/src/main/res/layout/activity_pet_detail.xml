@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.motion.widget.MotionLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_motion"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene_pet_detail"
+    android:fitsSystemWindows="true"
+    tools:showPaths="true">
 
+    <ImageView
+        android:id="@+id/details_header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/detail_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimary"/>
 
-</LinearLayout>
+    <View
+        android:id="@+id/details_header_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/details_header"
+        app:layout_constraintEnd_toEndOf="@id/details_header"
+        app:layout_constraintStart_toStartOf="@id/details_header"
+        app:layout_constraintTop_toTopOf="@id/details_header"/>
+
+    <View
+        android:id="@+id/details_appbar_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/details_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:text="Some random title"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+        android:id="@+id/details_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Insert some description here!"
+        android:ellipsize="end"
+        android:text="Drama // Fantasy"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        android:textColor="#000000"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/details_toolbar"
+        style="@style/Widget.Shrine.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        tools:ignore="RtlSymmetry"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/details_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/productGridBackgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_appbar_background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="#123123"/>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- This needs to be updated to use WindowInsets. See https://issuetracker.google.com/issues/112605433 -->
+    <View
+        android:id="@+id/details_status_bar_anchor"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/status_bar_translucent_scrim"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/details_follow_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        app:backgroundTint="@color/colorSecondary"
+        app:rippleColor="@color/colorPrimary"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_dog"
+        app:layout_constraintBottom_toTopOf="@id/details_appbar_background"
+        app:layout_constraintEnd_toEndOf="@id/details_appbar_background"
+        app:layout_constraintTop_toTopOf="@id/details_appbar_background"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

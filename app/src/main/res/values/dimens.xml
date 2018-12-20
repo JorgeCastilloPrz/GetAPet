@@ -11,6 +11,10 @@
     <dimen name="toolbar_elevation">6dp</dimen>
     <dimen name="icon_button_size">56dp</dimen>
     <dimen name="backdrop_corner_radius">36dp</dimen>
+    <dimen name="details_poster_elevation">4dp</dimen>
+    <dimen name="details_poster_not_elevation">0dp</dimen>
+    <dimen name="details_appbar_elevation">4dp</dimen>
+    <dimen name="detail_header_height">200dp</dimen>
 
     <dimen name="shr_product_grid_reveal_height">42dp</dimen>
     <dimen name="backdrop_top_padding">58dp</dimen>
