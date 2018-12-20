@@ -30,10 +30,7 @@
     <View
         android:id="@+id/details_appbar_background"
         android:layout_width="0dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="@id/details_header"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_height="88dp"/>
 
     <TextView
         android:id="@+id/details_title"
@@ -84,18 +81,5 @@
         android:layout_width="match_parent"
         android:layout_height="24dp"
         android:background="@drawable/status_bar_translucent_scrim"/>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/details_follow_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/spacing_medium"
-        app:backgroundTint="@color/colorSecondary"
-        app:rippleColor="@color/colorPrimary"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_dog"
-        app:layout_constraintBottom_toTopOf="@id/details_appbar_background"
-        app:layout_constraintEnd_toEndOf="@id/details_appbar_background"
-        app:layout_constraintTop_toTopOf="@id/details_appbar_background"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
