@@ -50,14 +50,15 @@
         <Constraint
             android:id="@id/details_header"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
+            android:layout_height="@dimen/detail_header_height"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint
             android:id="@id/details_header_scrim"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="@id/details_header"
             app:layout_constraintEnd_toEndOf="@id/details_header"
             app:layout_constraintStart_toStartOf="@id/details_header"
@@ -131,7 +132,7 @@
 
             <CustomAttribute
                 app:attributeName="background"
-                app:customColorDrawableValue="@color/color_on_background_10"/>
+                app:customColorDrawableValue="@color/colorPrimary"/>
 
         </Constraint>
 

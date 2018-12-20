@@ -14,10 +14,12 @@
         android:id="@+id/details_header"
         android:layout_width="0dp"
         android:layout_height="@dimen/detail_header_height"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:scaleType="centerCrop"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary"
+        android:src="@drawable/mock_header_image"/>
 
     <View
         android:id="@+id/details_header_scrim"
@@ -31,8 +33,10 @@
     <View
         android:id="@+id/details_appbar_background"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/colorPrimary"/>
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="@id/details_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/details_title"
