@@ -50,7 +50,7 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
         android:textColor="#000000"/>
 
-    <androidx.appcompat.widget.Toolbar
+    <jorgecastilloprz.github.io.getapet.common.view.TintingToolbar
         android:id="@+id/details_toolbar"
         style="@style/Widget.Shrine.Toolbar"
         android:layout_width="match_parent"

@@ -145,7 +145,7 @@
 
             <CustomAttribute
                 app:attributeName="iconTint"
-                app:customColorValue="?android:attr/textColorPrimary"/>
+                app:customColorValue="@color/iconColor"/>
 
         </Constraint>
 
