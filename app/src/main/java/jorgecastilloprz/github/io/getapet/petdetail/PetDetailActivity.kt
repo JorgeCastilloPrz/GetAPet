@@ -31,6 +31,15 @@ class PetDetailActivity : AppCompatActivity() {
         val isDark = intent?.extras?.getBoolean(EXTRA_PET_IS_DARK, false) ?: false
         val iconRes = if (isDark) R.drawable.ic_close_black_24dp_light else R.drawable.ic_close_black_24dp_dark
         details_toolbar.setNavigationIcon(iconRes)
+
+        val startingConstraintSet = details_motion.getConstraintSet(R.id.start)
+
+        val darkColor = ContextCompat.getColor(this, R.color.iconColor)
+        val lightColor = ContextCompat.getColor(this, R.color.colorSecondary)
+        startingConstraintSet
+            .getParameters(R.id.details_toolbar)
+            .mCustomConstraints["IconTint"]
+            ?.setColorValue(if (isDark) lightColor else darkColor)
     }
 
     companion object {
