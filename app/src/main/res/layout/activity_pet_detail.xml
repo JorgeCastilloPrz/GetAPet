@@ -80,7 +80,7 @@
         app:navigationIcon="@drawable/ic_close_black_24dp_dark"
         tools:ignore="RtlSymmetry" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="0dp"

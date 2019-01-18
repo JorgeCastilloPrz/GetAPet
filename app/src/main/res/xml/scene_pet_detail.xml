@@ -41,10 +41,10 @@
                 app:target="@id/details_subtitle" />
 
             <KeyAttribute
-                app:target="@id/avatar"
                 android:scaleX="0"
                 android:scaleY="0"
-                app:framePosition="20" />
+                app:framePosition="20"
+                app:target="@id/avatar" />
 
         </KeyFrameSet>
 
