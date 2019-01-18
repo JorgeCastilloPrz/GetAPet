@@ -13,4 +13,5 @@
     <string name="app_icon_description">The app icon in the top bar is a dog\'s face silhouette.</string>
     <string name="add_pet_button_description">Button to publish a new pet for adoption</string>
     <string name="filter_button_description">Button to filter pets by species or breed</string>
+    <string name="detail_image_description">Header image showing the pet</string>
 </resources>

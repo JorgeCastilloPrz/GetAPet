@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    app:layoutDescription="@xml/scene_pet_detail"
-    >
+    tools:showPaths="true">
 
     <ImageView
         android:id="@+id/details_header"
@@ -16,7 +15,7 @@
         android:background="@color/colorPrimary"
         android:contentDescription="@string/detail_image_description"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/details_appbar_background"
+        app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,6 +25,7 @@
         android:id="@+id/details_header_scrim"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@id/details_header"
         app:layout_constraintEnd_toEndOf="@id/details_header"
         app:layout_constraintStart_toStartOf="@id/details_header"
@@ -34,47 +34,50 @@
     <View
         android:id="@+id/details_appbar_background"
         android:layout_width="0dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="@id/details_header"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="?android:attr/actionBarSize"
+        android:elevation="@dimen/details_appbar_elevation"
+        app:layout_constraintEnd_toEndOf="@id/details_rv"
+        app:layout_constraintStart_toStartOf="@id/details_rv"
+        app:layout_constraintTop_toBottomOf="@id/details_status_bar_anchor" />
 
     <TextView
         android:id="@+id/details_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/spacing_medium"
-        android:layout_marginEnd="@dimen/spacing_medium"
-        android:layout_marginBottom="@dimen/spacing_very_small"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="64dp"
+        android:elevation="@dimen/details_appbar_elevation"
         android:ellipsize="end"
         android:text="Some random title"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        app:layout_constraintBottom_toTopOf="@+id/details_subtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
+        app:layout_constraintEnd_toEndOf="@id/details_appbar_background"
+        app:layout_constraintStart_toStartOf="@id/details_appbar_background"
+        app:layout_constraintTop_toTopOf="@id/details_appbar_background" />
 
     <TextView
         android:id="@+id/details_subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/spacing_medium"
+        android:elevation="@dimen/details_appbar_elevation"
+        android:visibility="invisible"
+        android:alpha="0"
         android:contentDescription="Insert some description here!"
         android:ellipsize="end"
         android:text="Drama // Fantasy"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/details_title" />
+        app:layout_constraintEnd_toEndOf="@id/details_title"
+        app:layout_constraintStart_toStartOf="@id/details_title"
+        app:layout_constraintTop_toBottomOf="@id/details_title" />
 
     <jorgecastilloprz.github.io.getapet.common.view.TintingToolbar
         android:id="@+id/details_toolbar"
         style="@style/Widget.Shrine.Toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="@dimen/details_appbar_elevation"
         android:background="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/details_status_bar_anchor"
         app:navigationIcon="@drawable/ic_close_black_24dp_dark"
         tools:ignore="RtlSymmetry" />
