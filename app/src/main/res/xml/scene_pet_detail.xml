@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2018 Google, Inc.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,8 +13,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<MotionScene
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
@@ -27,20 +25,26 @@
             app:dragDirection="dragUp"
             app:moveWhenScrollAtTop="true"
             app:touchAnchorId="@id/details_rv"
-            app:touchAnchorSide="top"/>
+            app:touchAnchorSide="top" />
 
         <KeyFrameSet>
             <!-- Only elevate the appbar background over the last 25% -->
             <KeyAttribute
                 android:elevation="0dp"
                 app:framePosition="75"
-                app:target="@id/details_appbar_background"/>
+                app:target="@id/details_appbar_background" />
 
             <!-- We want the subtitle to fade out quickly, within the starting 75% -->
             <KeyAttribute
                 android:alpha="0"
                 app:framePosition="75"
-                app:target="@id/details_subtitle"/>
+                app:target="@id/details_subtitle" />
+
+            <KeyAttribute
+                app:target="@id/avatar"
+                android:scaleX="0"
+                android:scaleY="0"
+                app:framePosition="20" />
 
         </KeyFrameSet>
 
@@ -59,7 +63,7 @@
 
             <CustomAttribute
                 app:attributeName="background"
-                app:customColorDrawableValue="@android:color/transparent"/>
+                app:customColorDrawableValue="@android:color/transparent" />
 
         </Constraint>
 
@@ -74,7 +78,7 @@
 
             <CustomAttribute
                 app:attributeName="iconTint"
-                app:customColorValue="?android:attr/textColorPrimaryInverse"/>
+                app:customColorValue="?android:attr/textColorPrimaryInverse" />
 
         </Constraint>
 
@@ -84,7 +88,7 @@
             android:layout_height="88dp"
             app:layout_constraintBottom_toBottomOf="@id/details_header"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Constraint
             android:id="@id/details_title"
@@ -94,7 +98,7 @@
             android:layout_marginEnd="@dimen/spacing_medium"
             app:layout_constraintBottom_toTopOf="@+id/details_subtitle"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Constraint
             android:id="@id/details_subtitle"
@@ -103,7 +107,16 @@
             android:layout_marginBottom="@dimen/spacing_medium"
             app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/details_title"/>
+            app:layout_constraintStart_toStartOf="@id/details_title" />
+
+        <Constraint
+            android:id="@+id/details_rv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatar" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -119,7 +132,7 @@
 
             <CustomAttribute
                 app:attributeName="background"
-                app:customColorDrawableValue="@color/colorPrimary"/>
+                app:customColorDrawableValue="@color/colorPrimary" />
 
         </Constraint>
 
@@ -134,7 +147,7 @@
 
             <CustomAttribute
                 app:attributeName="iconTint"
-                app:customColorValue="@color/iconColor"/>
+                app:customColorValue="@color/iconColor" />
 
         </Constraint>
 
@@ -145,29 +158,38 @@
             android:elevation="@dimen/details_appbar_elevation"
             app:layout_constraintEnd_toEndOf="@id/details_rv"
             app:layout_constraintStart_toStartOf="@id/details_rv"
-            app:layout_constraintTop_toBottomOf="@id/details_status_bar_anchor"/>
+            app:layout_constraintTop_toBottomOf="@id/details_status_bar_anchor" />
 
         <Constraint
             android:id="@id/details_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
             android:layout_marginStart="64dp"
+            android:layout_marginEnd="48dp"
             android:elevation="@dimen/details_appbar_elevation"
             app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
             app:layout_constraintEnd_toEndOf="@id/details_appbar_background"
             app:layout_constraintStart_toStartOf="@id/details_appbar_background"
-            app:layout_constraintTop_toTopOf="@id/details_appbar_background"/>
+            app:layout_constraintTop_toTopOf="@id/details_appbar_background" />
 
         <Constraint
             android:id="@id/details_subtitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:alpha="0"
             android:elevation="@dimen/details_appbar_elevation"
             android:visibility="invisible"
-            android:alpha="0"
             app:layout_constraintEnd_toEndOf="@id/details_title"
             app:layout_constraintStart_toStartOf="@id/details_title"
-            app:layout_constraintTop_toBottomOf="@id/details_title"/>
+            app:layout_constraintTop_toBottomOf="@id/details_title" />
+
+        <Constraint
+            android:id="@+id/details_rv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_appbar_background" />
     </ConstraintSet>
 </MotionScene>

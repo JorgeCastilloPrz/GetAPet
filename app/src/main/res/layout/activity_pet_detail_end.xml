@@ -44,8 +44,8 @@
         android:id="@+id/details_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
         android:layout_marginStart="64dp"
+        android:layout_marginEnd="48dp"
         android:elevation="@dimen/details_appbar_elevation"
         android:ellipsize="end"
         android:text="Some random title"
@@ -59,14 +59,14 @@
         android:id="@+id/details_subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:elevation="@dimen/details_appbar_elevation"
-        android:visibility="invisible"
         android:alpha="0"
         android:contentDescription="Insert some description here!"
+        android:elevation="@dimen/details_appbar_elevation"
         android:ellipsize="end"
         android:text="Drama // Fantasy"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
         android:textColor="#000000"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@id/details_title"
         app:layout_constraintStart_toStartOf="@id/details_title"
         app:layout_constraintTop_toBottomOf="@id/details_title" />
@@ -76,11 +76,25 @@
         style="@style/Widget.Shrine.Toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="@dimen/details_appbar_elevation"
         android:background="@android:color/transparent"
+        android:elevation="@dimen/details_appbar_elevation"
         app:layout_constraintTop_toBottomOf="@id/details_status_bar_anchor"
         app:navigationIcon="@drawable/ic_close_black_24dp_dark"
         tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:alpha="0"
+        android:contentDescription="@string/avatar_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_title"
+        tools:background="@color/colorPrimary" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/details_rv"
