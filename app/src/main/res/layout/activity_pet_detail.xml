@@ -316,19 +316,17 @@
                 app:closeIconEnabled="false"
                 app:rippleColor="@color/colorSecondary" />
 
-            <View
+            <Button
+                android:id="@+id/talkToOwnerButton"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_dog"
+                style="@style/CtaButton"
                 android:layout_marginStart="@dimen/spacing_medium"
                 android:layout_marginTop="@dimen/spacing_semi_large"
                 android:layout_marginEnd="@dimen/spacing_medium"
-                android:background="@color/divider" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/spacing_extra_large"
-                android:text="something" />
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:text="@string/talk_to_owner_cta" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

@@ -84,4 +84,18 @@
         <item name="android:textColor">@color/textColorBody</item>
     </style>
 
+    <style name="TextAppearanceButton">
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="CtaButton" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:textAppearance">@style/TextAppearanceButton</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">@dimen/spacing_medium</item>
+        <item name="android:paddingBottom">@dimen/spacing_medium</item>
+        <item name="cornerRadius">@dimen/radius_large</item>
+    </style>
 </resources>

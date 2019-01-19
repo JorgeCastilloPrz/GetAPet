@@ -20,6 +20,12 @@
     <dimen name="stroke_width_small">2dp</dimen>
     <dimen name="stroke_width_very_small">1dp</dimen>
 
+    <dimen name="radius_very_large">24dp</dimen>
+    <dimen name="radius_large">12dp</dimen>
+    <dimen name="radius_medium">8dp</dimen>
+    <dimen name="radius_small">4dp</dimen>
+    <dimen name="radius_very_small">2dp</dimen>
+
     <dimen name="toolbar_elevation">6dp</dimen>
     <dimen name="icon_button_size">56dp</dimen>
     <dimen name="backdrop_corner_radius">36dp</dimen>
