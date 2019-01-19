@@ -54,6 +54,12 @@
         <item name="android:background">?attr/colorPrimary</item>
     </style>
 
+    <style name="TextAppearanceHeadline5">
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+        <item name="android:textSize">@dimen/text_very_large</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
     <style name="TextAppearanceHeadline4">
         <item name="android:fontFamily">@font/rubik_regular_family</item>
         <item name="android:textSize">@dimen/text_very_large</item>
