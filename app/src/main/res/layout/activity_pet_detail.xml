@@ -143,17 +143,33 @@
                 android:paddingEnd="@dimen/spacing_medium"
                 android:text="@string/mock_description" />
 
-            <TextView
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/spacing_extra_large"
-                android:text="something" />
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_semi_large"
+                />
 
             <TextView
+                android:id="@+id/characteristicsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/spacing_extra_large"
-                android:text="something" />
+                android:paddingStart="@dimen/spacing_medium"
+                android:paddingEnd="@dimen/spacing_medium"
+                android:paddingTop="@dimen/spacing_semi_large"
+                android:text="Select size"
+                android:textAppearance="@style/TextAppearanceHeadline6"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_semi_large"
+                />
 
             <TextView
                 android:layout_width="match_parent"

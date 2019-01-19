@@ -9,4 +9,5 @@
     <color name="iconColor">@color/textColor</color>
     <color name="productGridBackgroundColor">#FEFBFA</color>
     <color name="background">#ffffff</color>
+    <color name="divider">#D9D5D5</color>
 </resources>
