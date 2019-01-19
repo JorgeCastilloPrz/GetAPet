@@ -1,164 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/details_motion"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        android:background="@color/productGridBackgroundColor"
-        app:layoutDescription="@xml/scene_pet_detail">
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_motion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/productGridBackgroundColor"
+    app:layoutDescription="@xml/scene_pet_detail"
+    android:fitsSystemWindows="true">
 
     <!-- app:layoutDescription="@xml/scene_pet_detail" -->
 
     <ImageView
-            android:id="@+id/details_header"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/detail_header_height"
-            android:background="@color/colorPrimary"
-            android:contentDescription="@string/detail_image_description"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toBottomOf="@+id/details_appbar_background"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/mock_header_image"/>
+        android:id="@+id/details_header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/detail_header_height"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/detail_image_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/details_appbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/mock_header_image" />
 
     <View
-            android:id="@+id/details_header_scrim"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/details_header"
-            app:layout_constraintEnd_toEndOf="@id/details_header"
-            app:layout_constraintStart_toStartOf="@id/details_header"
-            app:layout_constraintTop_toTopOf="@id/details_header"/>
+        android:id="@+id/details_header_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/details_header"
+        app:layout_constraintEnd_toEndOf="@id/details_header"
+        app:layout_constraintStart_toStartOf="@id/details_header"
+        app:layout_constraintTop_toTopOf="@id/details_header" />
 
     <View
-            android:id="@+id/details_appbar_background"
-            android:layout_width="0dp"
-            android:layout_height="88dp"
-            app:layout_constraintBottom_toBottomOf="@id/details_header"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+        android:id="@+id/details_appbar_background"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="@id/details_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-            android:id="@+id/details_title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_medium"
-            android:layout_marginEnd="@dimen/spacing_medium"
-            android:layout_marginBottom="@dimen/spacing_very_small"
-            android:ellipsize="end"
-            android:text="Some random title"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            app:layout_constraintBottom_toTopOf="@+id/details_subtitle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+        android:id="@+id/details_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_very_small"
+        android:ellipsize="end"
+        android:text="Some random title"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintBottom_toTopOf="@+id/details_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-            android:id="@+id/details_subtitle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/spacing_medium"
-            android:contentDescription="Insert some description here!"
-            android:ellipsize="end"
-            android:text="Drama // Fantasy"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-            android:textColor="#000000"
-            app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/details_title"/>
+        android:id="@+id/details_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:contentDescription="Insert some description here!"
+        android:ellipsize="end"
+        android:text="Drama // Fantasy"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/details_title" />
 
     <jorgecastilloprz.github.io.getapet.common.view.TintingToolbar
-            android:id="@+id/details_toolbar"
-            style="@style/Widget.Shrine.Toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/details_status_bar_anchor"
-            app:navigationIcon="@drawable/ic_close_black_24dp_dark"
-            tools:ignore="RtlSymmetry"/>
+        android:id="@+id/details_toolbar"
+        style="@style/Widget.Shrine.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_status_bar_anchor"
+        app:navigationIcon="@drawable/ic_close_black_24dp_dark"
+        tools:ignore="RtlSymmetry" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/avatar"
-            android:layout_width="@dimen/avatar_size"
-            android:layout_height="0dp"
-            android:layout_marginStart="@dimen/spacing_medium"
-            android:layout_marginTop="@dimen/spacing_medium"
-            android:contentDescription="@string/avatar_description"
-            android:scaleType="centerCrop"
-            app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/details_appbar_background"
-            tools:background="@color/colorPrimary"/>
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:contentDescription="@string/avatar_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_appbar_background"
+        tools:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:textAppearance="@style/TextAppearance.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LMBRJK"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintTop_toTopOf="@+id/avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintStart_toEndOf="@id/avatar"/>
 
     <androidx.core.widget.NestedScrollView
-            android:id="@+id/details_rv"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@color/productGridBackgroundColor"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/avatar">
+        android:id="@+id/details_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/productGridBackgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar">
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:padding="@dimen/spacing_extra_large"
+                android:text="something" />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/spacing_extra_large"
-                    android:text="something"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_extra_large"
+                android:text="something" />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/spacing_extra_large"
-                    android:text="something"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_extra_large"
+                android:text="something" />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/spacing_extra_large"
-                    android:text="something"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_extra_large"
+                android:text="something" />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/spacing_extra_large"
-                    android:text="something"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_extra_large"
+                android:text="something" />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/spacing_extra_large"
-                    android:text="something"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_extra_large"
+                android:text="something" />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/spacing_extra_large"
-                    android:text="something"/>
-
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/spacing_extra_large"
-                    android:text="something"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_extra_large"
+                android:text="something" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
     <!-- This needs to be updated to use WindowInsets. See https://issuetracker.google.com/issues/112605433 -->
     <View
-            android:id="@+id/details_status_bar_anchor"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:background="@drawable/status_bar_translucent_scrim"/>
+        android:id="@+id/details_status_bar_anchor"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/status_bar_translucent_scrim" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

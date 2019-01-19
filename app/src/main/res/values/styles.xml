@@ -53,4 +53,10 @@
     <style name="Widget.Shrine.Backdrop" parent="">
         <item name="android:background">?attr/colorPrimary</item>
     </style>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/rubik_medium_family</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/textColorBody</item>
+    </style>
 </resources>

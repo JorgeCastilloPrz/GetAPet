@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Versioned dimens -->
+
     <dimen name="backdrop_top_padding">88dp</dimen>
     <dimen name="backdrop_menu_button">20sp</dimen>
 
