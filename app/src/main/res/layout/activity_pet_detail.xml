@@ -175,7 +175,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="@string/category_dogs"/>
@@ -188,7 +188,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="Male"/>
@@ -201,7 +201,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="Yorkshire terrier"/>
@@ -214,7 +214,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="Sterilized"/>
@@ -227,7 +227,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="2 years"/>
@@ -240,7 +240,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="Medium sized"/>
@@ -253,7 +253,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="Good behavior"/>
@@ -266,7 +266,7 @@
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
                     app:closeIconEnabled="false"
-                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
                     android:text="Educated"/>
@@ -279,14 +279,18 @@
                 android:background="@color/divider"
                 android:layout_marginStart="@dimen/spacing_medium"
                 android:layout_marginEnd="@dimen/spacing_medium"
-                android:layout_marginTop="@dimen/spacing_semi_large"
+                android:layout_marginTop="@dimen/spacing_medium"
                 />
 
             <TextView
+                android:id="@+id/locationTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/spacing_extra_large"
-                android:text="something" />
+                android:paddingStart="@dimen/spacing_medium"
+                android:paddingEnd="@dimen/spacing_medium"
+                android:paddingTop="@dimen/spacing_semi_large"
+                android:text="Lives in"
+                android:textAppearance="@style/TextAppearanceHeadline6"/>
 
             <TextView
                 android:layout_width="match_parent"
