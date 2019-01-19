@@ -54,9 +54,15 @@
         <item name="android:background">?attr/colorPrimary</item>
     </style>
 
-    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
-        <item name="android:fontFamily">@font/rubik_medium_family</item>
-        <item name="android:textSize">@dimen/text_small</item>
+    <style name="TextAppearanceHeadline4">
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+        <item name="android:textSize">@dimen/text_very_large</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextAppearanceOverline">
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+        <item name="android:textSize">@dimen/text_medium</item>
         <item name="android:textColor">@color/textColorBody</item>
     </style>
 </resources>

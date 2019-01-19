@@ -5,7 +5,7 @@
     android:id="@+id/details_motion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/productGridBackgroundColor"
+    android:background="@color/background"
     app:layoutDescription="@xml/scene_pet_detail"
     android:fitsSystemWindows="true">
 
@@ -96,7 +96,7 @@
 
     <TextView
         android:id="@+id/ownerName"
-        android:textAppearance="@style/TextAppearance.Button"
+        android:textAppearance="@style/TextAppearanceOverline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LMBRJK"
@@ -105,11 +105,23 @@
         app:layout_constraintBottom_toBottomOf="@+id/avatar"
         app:layout_constraintStart_toEndOf="@id/avatar"/>
 
+    <TextView
+        android:id="@+id/distanceLabel"
+        android:layout_width="wrap_content"
+        android:textAppearance="@style/TextAppearanceHeadline4"
+        android:layout_height="wrap_content"
+        android:text="240m"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        app:layout_constraintTop_toTopOf="@+id/avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <androidx.core.widget.NestedScrollView
         android:id="@+id/details_rv"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/productGridBackgroundColor"
+        android:background="@color/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

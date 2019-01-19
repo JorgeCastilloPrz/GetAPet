@@ -61,6 +61,16 @@
                 android:alpha="0"
                 app:framePosition="100"
                 app:target="@+id/ownerName" />
+
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="20"
+                app:target="@+id/distanceLabel" />
+
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="100"
+                app:target="@+id/distanceLabel" />
         </KeyFrameSet>
 
     </Transition>
