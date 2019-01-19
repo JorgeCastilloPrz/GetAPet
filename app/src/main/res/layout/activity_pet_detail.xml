@@ -178,6 +178,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="@string/category_dogs"/>
 
                 <com.google.android.material.chip.Chip
@@ -191,6 +192,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="Male"/>
 
                 <com.google.android.material.chip.Chip
@@ -204,6 +206,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="Yorkshire terrier"/>
 
                 <com.google.android.material.chip.Chip
@@ -217,6 +220,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="Sterilized"/>
 
                 <com.google.android.material.chip.Chip
@@ -230,6 +234,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="2 years"/>
 
                 <com.google.android.material.chip.Chip
@@ -243,6 +248,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="Medium sized"/>
 
                 <com.google.android.material.chip.Chip
@@ -256,6 +262,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="Good behavior"/>
 
                 <com.google.android.material.chip.Chip
@@ -269,6 +276,7 @@
                     app:chipStrokeColor="@color/colorPrimary"
                     app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
+                    app:rippleColor="@color/colorSecondary"
                     android:text="Educated"/>
 
             </com.google.android.material.chip.ChipGroup>
