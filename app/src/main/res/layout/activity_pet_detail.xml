@@ -41,34 +41,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/details_title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/spacing_medium"
-        android:layout_marginEnd="@dimen/spacing_medium"
-        android:layout_marginBottom="@dimen/spacing_very_small"
-        android:ellipsize="end"
-        android:text="Some random title"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        app:layout_constraintBottom_toTopOf="@+id/details_subtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/details_subtitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/spacing_medium"
-        android:contentDescription="Insert some description here!"
-        android:ellipsize="end"
-        android:text="Drama // Fantasy"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/details_title" />
-
     <jorgecastilloprz.github.io.getapet.common.view.TintingToolbar
         android:id="@+id/details_toolbar"
         style="@style/Widget.Shrine.Toolbar"
