@@ -71,4 +71,10 @@
         <item name="android:textSize">@dimen/text_medium</item>
         <item name="android:textColor">@color/textColorBody</item>
     </style>
+
+    <style name="TextAppearanceBody2">
+        <item name="android:fontFamily">@font/rubik_regular_family</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/textColorBody</item>
+    </style>
 </resources>
