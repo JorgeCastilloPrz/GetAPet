@@ -316,11 +316,11 @@
                 app:closeIconEnabled="false"
                 app:rippleColor="@color/colorSecondary" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/talkToOwnerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_dog"
+                app:icon="@drawable/ic_chat"
                 style="@style/CtaButton"
                 android:layout_marginStart="@dimen/spacing_medium"
                 android:layout_marginTop="@dimen/spacing_semi_large"

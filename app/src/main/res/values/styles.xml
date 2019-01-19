@@ -97,5 +97,8 @@
         <item name="android:paddingTop">@dimen/spacing_medium</item>
         <item name="android:paddingBottom">@dimen/spacing_medium</item>
         <item name="cornerRadius">@dimen/radius_large</item>
+        <item name="iconPadding">@dimen/spacing_medium</item>
+        <item name="iconTint">@color/iconColor</item>
+        <item name="iconGravity">textStart</item>
     </style>
 </resources>
