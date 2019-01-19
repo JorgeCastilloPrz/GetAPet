@@ -67,6 +67,26 @@
                 android:alpha="0"
                 app:framePosition="100"
                 app:target="@+id/distanceLabel" />
+
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="20"
+                app:target="@+id/title" />
+
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="100"
+                app:target="@+id/title" />
+
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="50"
+                app:target="@+id/toolbarTitle" />
+
+            <KeyAttribute
+                android:alpha="1"
+                app:framePosition="100"
+                app:target="@+id/toolbarTitle" />
         </KeyFrameSet>
 
     </Transition>
@@ -130,6 +150,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+        <Constraint
+            android:id="@+id/toolbarTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="48dp"
+            android:alpha="0"
+            android:elevation="@dimen/details_appbar_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_toolbar" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -186,12 +218,26 @@
             android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:alpha="0"
             android:elevation="@dimen/details_appbar_elevation"
             app:layout_constraintBottom_toBottomOf="@id/details_appbar_background"
             app:layout_constraintEnd_toEndOf="@id/details_appbar_background"
             app:layout_constraintStart_toStartOf="@id/details_appbar_background"
             app:layout_constraintTop_toTopOf="@id/details_appbar_background" />
+
+        <Constraint
+            android:id="@+id/toolbarTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="48dp"
+            android:elevation="@dimen/details_appbar_elevation"
+            app:layout_constraintBottom_toBottomOf="@+id/details_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/details_toolbar" />
     </ConstraintSet>
 </MotionScene>

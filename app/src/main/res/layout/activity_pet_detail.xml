@@ -96,11 +96,27 @@
         android:layout_marginStart="@dimen/spacing_medium"
         android:layout_marginTop="@dimen/spacing_large"
         android:layout_marginEnd="@dimen/spacing_medium"
-        android:text="Flow Shirt Blouse"
+        android:alpha="0"
+        android:text="Lubna &amp; Lubno"
         android:textAppearance="@style/TextAppearanceHeadline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="48dp"
+        android:alpha="0"
+        android:elevation="@dimen/details_appbar_elevation"
+        android:ellipsize="end"
+        android:text="Lubna &amp; Lubno"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_toolbar" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/details_rv"
