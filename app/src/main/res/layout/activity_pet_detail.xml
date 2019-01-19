@@ -309,7 +309,7 @@
                 android:text="Cabezo de Torres, Murcia"
                 app:checkedIconEnabled="false"
                 app:chipBackgroundColor="@color/background"
-                app:chipIcon="@drawable/ic_map_black_24dp"
+                app:chipIcon="@drawable/ic_location_on_black_24dp"
                 app:chipIconEnabled="true"
                 app:chipStrokeColor="@color/colorPrimary"
                 app:chipStrokeWidth="@dimen/stroke_width_small"
@@ -323,12 +323,6 @@
                 android:layout_marginTop="@dimen/spacing_semi_large"
                 android:layout_marginEnd="@dimen/spacing_medium"
                 android:background="@color/divider" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/spacing_extra_large"
-                android:text="something" />
 
             <TextView
                 android:layout_width="match_parent"
