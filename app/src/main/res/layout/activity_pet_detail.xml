@@ -162,6 +162,117 @@
                 android:text="Select size"
                 android:textAppearance="@style/TextAppearanceHeadline6"/>
 
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_medium">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="@string/category_dogs"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="Male"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="Yorkshire terrier"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="Sterilized"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="2 years"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="Medium sized"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="Good behavior"/>
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedIconVisible="false"
+                    app:chipIconEnabled="false"
+                    app:chipIconVisible="false"
+                    app:closeIconEnabled="false"
+                    app:chipStrokeColor="@color/colorSecondary"
+                    app:chipBackgroundColor="@color/background"
+                    app:chipStrokeWidth="@dimen/stroke_width_small"
+                    android:text="Educated"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
