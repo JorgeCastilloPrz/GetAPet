@@ -70,7 +70,7 @@
 
             <KeyAttribute
                 android:alpha="0"
-                app:framePosition="20"
+                app:framePosition="50"
                 app:target="@+id/title" />
 
             <KeyAttribute
