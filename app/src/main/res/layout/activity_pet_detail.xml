@@ -137,30 +137,29 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearanceBody2"
                 android:layout_marginTop="@dimen/spacing_large"
                 android:paddingStart="@dimen/spacing_medium"
                 android:paddingEnd="@dimen/spacing_medium"
-                android:text="@string/mock_description" />
+                android:text="@string/mock_description"
+                android:textAppearance="@style/TextAppearanceBody2" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/divider"
                 android:layout_marginStart="@dimen/spacing_medium"
-                android:layout_marginEnd="@dimen/spacing_medium"
                 android:layout_marginTop="@dimen/spacing_semi_large"
-                />
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:background="@color/divider" />
 
             <TextView
                 android:id="@+id/characteristicsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="@dimen/spacing_medium"
-                android:paddingEnd="@dimen/spacing_medium"
                 android:paddingTop="@dimen/spacing_semi_large"
+                android:paddingEnd="@dimen/spacing_medium"
                 android:text="Select size"
-                android:textAppearance="@style/TextAppearanceHeadline6"/>
+                android:textAppearance="@style/TextAppearanceHeadline6" />
 
             <com.google.android.material.chip.ChipGroup
                 android:layout_width="match_parent"
@@ -171,140 +170,159 @@
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/category_dogs"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="@string/category_dogs"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Male"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="Male"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Yorkshire terrier"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="Yorkshire terrier"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Sterilized"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="Sterilized"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="2 years"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="2 years"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Medium sized"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="Medium sized"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Good behavior"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="Good behavior"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Educated"
                     app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/background"
                     app:chipIconEnabled="false"
                     app:chipIconVisible="false"
-                    app:closeIconEnabled="false"
                     app:chipStrokeColor="@color/colorPrimary"
-                    app:chipBackgroundColor="@color/background"
                     app:chipStrokeWidth="@dimen/stroke_width_small"
-                    app:rippleColor="@color/colorSecondary"
-                    android:text="Educated"/>
+                    app:closeIconEnabled="false"
+                    app:rippleColor="@color/colorSecondary" />
 
             </com.google.android.material.chip.ChipGroup>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/divider"
                 android:layout_marginStart="@dimen/spacing_medium"
-                android:layout_marginEnd="@dimen/spacing_medium"
                 android:layout_marginTop="@dimen/spacing_medium"
-                />
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:background="@color/divider" />
 
             <TextView
                 android:id="@+id/locationTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="@dimen/spacing_medium"
-                android:paddingEnd="@dimen/spacing_medium"
                 android:paddingTop="@dimen/spacing_semi_large"
+                android:paddingEnd="@dimen/spacing_medium"
                 android:text="Lives in"
-                android:textAppearance="@style/TextAppearanceHeadline6"/>
+                android:textAppearance="@style/TextAppearanceHeadline6" />
 
-            <TextView
-                android:layout_width="match_parent"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/location"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/spacing_extra_large"
-                android:text="something" />
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:text="Cabezo de Torres, Murcia"
+                app:checkedIconEnabled="false"
+                app:chipBackgroundColor="@color/background"
+                app:chipIcon="@drawable/ic_map_black_24dp"
+                app:chipIconEnabled="true"
+                app:chipStrokeColor="@color/colorPrimary"
+                app:chipStrokeWidth="@dimen/stroke_width_small"
+                app:closeIconEnabled="false"
+                app:rippleColor="@color/colorSecondary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_semi_large"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:background="@color/divider" />
 
             <TextView
                 android:layout_width="match_parent"
