@@ -158,7 +158,7 @@
                 android:paddingStart="@dimen/spacing_medium"
                 android:paddingTop="@dimen/spacing_semi_large"
                 android:paddingEnd="@dimen/spacing_medium"
-                android:text="Select size"
+                android:text="@string/characteristics_title"
                 android:textAppearance="@style/TextAppearanceHeadline6" />
 
             <com.google.android.material.chip.ChipGroup
