@@ -47,6 +47,7 @@
                     android:id="@+id/petNameInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    style="@style/TextInputEditText"
                     android:inputType="text"
                     android:maxLines="1" />
 
@@ -70,6 +71,7 @@
                     android:id="@+id/descriptionInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    style="@style/TextInputEditText"
                     android:maxLines="10" />
 
             </com.google.android.material.textfield.TextInputLayout>
