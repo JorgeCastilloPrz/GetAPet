@@ -3,11 +3,10 @@ package jorgecastilloprz.github.io.getapet.publishpet
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
 import jorgecastilloprz.github.io.getapet.R
 import kotlinx.android.synthetic.main.activity_publish_pet.*
 
-class PublishPetActivity : FragmentActivity() {
+class PublishPetActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)

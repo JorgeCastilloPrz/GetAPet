@@ -78,7 +78,7 @@
                 android:id="@+id/characteristicsTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/spacing_semi_large"
+                android:paddingTop="@dimen/spacing_medium"
                 android:text="@string/characteristics_title"
                 android:textAppearance="@style/TextAppearanceHeadline6"
                 app:layout_constraintEnd_toEndOf="parent"

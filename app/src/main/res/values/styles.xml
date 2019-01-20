@@ -54,9 +54,9 @@
         <item name="android:background">?attr/colorPrimary</item>
     </style>
 
-    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
         <item name="boxBackgroundColor">@color/lightPrimaryBackground</item>
-        <item name="boxStrokeColor">@color/iconColor</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
         <item name="hintEnabled">true</item>
         <item name="hintTextColor">@color/textColor</item>
     </style>
