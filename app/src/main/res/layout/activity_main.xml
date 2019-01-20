@@ -16,7 +16,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            style="@style/Widget.Shrine.Toolbar"
+            style="@style/Widget.GetAPet.Toolbar"
             android:layout_width="0dp"
             android:layout_height="?attr/actionBarSize"
             app:contentInsetStart="0dp"
@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/shr_product_grid_reveal_height"
-                android:background="@color/productGridBackgroundColor"
+                android:background="@color/lightPrimaryBackground"
                 android:alpha="0"/>
         </FrameLayout>
 

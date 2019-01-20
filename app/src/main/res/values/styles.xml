@@ -7,7 +7,7 @@
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:textColorPrimary">@color/textColor</item>
-        <item name="toolbarStyle">@style/Widget.Shrine.Toolbar</item>
+        <item name="toolbarStyle">@style/Widget.GetAPet.Toolbar</item>
         <item name="colorControlHighlight">@color/colorSecondary</item>
     </style>
 
@@ -16,7 +16,7 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="Widget.Shrine.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+    <style name="Widget.GetAPet.Toolbar" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:background">@color/colorPrimary</item>
         <item name="titleTextAppearance">@style/TextAppearance.ToolbarTitle</item>
     </style>
@@ -52,6 +52,13 @@
 
     <style name="Widget.Shrine.Backdrop" parent="">
         <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundColor">@color/lightPrimaryBackground</item>
+        <item name="boxStrokeColor">@color/iconColor</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintTextColor">@color/textColor</item>
     </style>
 
     <style name="TextAppearanceHeadline5">

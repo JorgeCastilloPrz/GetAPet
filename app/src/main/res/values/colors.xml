@@ -7,7 +7,7 @@
     <color name="textColor">#442C2E</color> <!-- Shrine Pink 900 -->
     <color name="textColorBody">#707070</color>
     <color name="iconColor">@color/textColor</color>
-    <color name="productGridBackgroundColor">#FEFBFA</color>
+    <color name="lightPrimaryBackground">#FEFBFA</color>
     <color name="background">#ffffff</color>
     <color name="divider">#D9D5D5</color>
 </resources>

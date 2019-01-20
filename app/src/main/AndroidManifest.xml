@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="jorgecastilloprz.github.io.getapet">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jorgecastilloprz.github.io.getapet">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        android:fullBackupContent="@xml/backup_descriptor">
+        tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".petdetail.PetDetailActivity" android:theme="@style/AppTheme.Immerse"/>
+        <activity
+            android:name=".petdetail.PetDetailActivity"
+            android:theme="@style/AppTheme.Immerse" />
+
+        <activity
+            android:name=".publishpet.PublishPetActivity"
+            android:theme="@style/AppTheme" />
     </application>
 </manifest>
