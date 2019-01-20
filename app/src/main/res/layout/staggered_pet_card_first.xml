@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    app:cardBackgroundColor="@android:color/transparent"
-    app:cardElevation="0dp"
-    app:cardPreventCornerOverlap="true"
-    app:contentPaddingTop="@dimen/shr_staggered_product_grid_margin_top_first">
+    android:background="@android:color/transparent"
+    android:paddingTop="@dimen/shr_staggered_product_grid_margin_top_first">
 
     <!-- Product card layout used in MDC-103 and onward -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,41 +13,52 @@
         android:layout_width="@dimen/shr_staggered_product_grid_card_width_landscape"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/shr_staggered_product_grid_spacing_small"
-        android:layout_marginLeft="@dimen/shr_staggered_product_grid_spacing_small"
         tools:ignore="RtlHardcoded">
 
-        <ImageView
-            android:id="@+id/product_image"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/product_image_card"
             android:layout_width="0dp"
             android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
-            android:background="?attr/colorSecondary"
-            android:foreground="@drawable/grid_item_ripple"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:clickable="true"
-            android:focusable="true"
-            android:scaleType="centerCrop"
-            tools:ignore="ContentDescription"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="true">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorSecondary"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/grid_item_ripple"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+        </com.google.android.material.card.MaterialCardView>
 
         <ImageView
             android:id="@+id/favButton"
             style="@style/IconButton.Grid"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_gravity="end"
             android:layout_width="@dimen/icon_button_size"
             android:layout_height="@dimen/icon_button_size"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:contentDescription="@string/filter_button_description"
+            android:focusable="true"
             android:src="@drawable/ic_fav_dark"
-            android:contentDescription="@string/filter_button_description"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            app:layout_constraintTop_toBottomOf="@+id/product_image"
             android:layout_width="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_image_card">
 
             <TextView
                 android:id="@+id/product_title"
@@ -57,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="Some random title"
                 android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceBody2"/>
+                android:textAppearance="?attr/textAppearanceBody2" />
 
             <TextView
                 android:id="@+id/product_price"
@@ -65,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:text="$133"
                 android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceSubtitle2"/>
+                android:textAppearance="?attr/textAppearanceSubtitle2" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</com.google.android.material.card.MaterialCardView>
+</FrameLayout>
